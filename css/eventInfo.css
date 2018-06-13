@@ -1,0 +1,132 @@
+#header{
+	height:120px;
+	background-color:#0000cd;
+	color:white;
+}
+
+#contents{
+	min-height:80vh;
+	width:80%;
+	margin: 0 10%;
+}
+
+#footer{
+	height: 120px;
+	background-color: #0000cd;
+}
+
+
+
+#headerTitle{
+	padding : 30px 0 0 50px;
+	font-size: 60px;
+}
+
+
+.button{
+	-webkit-transition: background-color 0.2s linear;
+	transition: background-color 0.2s linear;
+	position: relative;
+	display: inline-block;
+	margin: 0 20px 8px 0;
+	padding: 12px;
+	border-radius: 8px;
+	background-color: #d1dcc6;
+	vertical-align: middle;
+	cursor: pointer;
+	text-decoration: none;
+	color:black;
+}
+
+.button:hover {
+	background-color: #c0cbb5;
+}
+
+.backButton{
+	
+}
+
+.link{
+	float:left;
+}
+
+.nextButton{
+}
+
+.alignRight{
+	text-align:right;
+}
+#searchWindow{
+	border-radius: 10px;
+	padding:10px 30px;
+	border:3px solid #000000;
+	margin:20px 0;
+}
+
+#categories .category{
+	display:inline-block;
+	border:1px solid #000000;
+	margin:10px;
+	padding:10px;
+	background-color: #aaaadd;
+	cursor:pointer;
+}
+
+.snumChange{
+	display:inline-block;
+	border:1px solid #000000;
+	margin:10px;
+	padding:10px;
+	background-color: #aaaadd;
+	cursor:pointer;
+}
+
+.showBlock{
+	margin:10px 0;
+}
+
+#searchButton{
+	margin:0 10px;
+}
+
+#snumButton{
+	margin:0 10px;
+}
+
+#snumWindow{
+	display: inline-block;
+	border-radius: 10px;
+	padding:10px 30px;
+	border:3px solid #000000;
+	margin:20px 0;
+}
+
+#info{
+	border-radius: 10px;
+	padding:10px 30px;
+	margin: 0 0 20px 0;
+	border:3px solid #000000;	
+}
+
+.eventInfo{
+	display: inline-block;
+	border-radius: 10px;
+	padding:10px 30px;
+	margin: 10px 0;
+	border:3px solid #000000;
+}
+
+.blockTitle{
+	font-size:30px;
+	margin:20px 0;
+	border-bottom: 3px solid red;
+}
+
+#searchText{
+	margin:0 10px;
+}
+
+#info .event_name{
+	font-size:24px;
+	margin:10px 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/eventInfo.css">
+</head>
+<body>
+	<div id="header">
+		<div id="headerTitle">福井県のイベント情報</div>
+	</div>
+	<div id="contents">
+		<div id="searchWindow">
+			<div class="blockTitle">検索</div>
+			<div class="searchBlock">
+				カテゴリで検索
+				<div id="categories"></div>
+			</div>
+			<div class="searchBlock">
+				キーワードで検索
+				<input type="textbox" id="searchText" onkeypress="searchSbm(event.keyCode);">
+				<div id="searchButton" class="button">検索</div>
+			</div>
+		</div>
+		<div id="snumWindow">
+			<div class="showBlock">
+				<div class="blockTitle">表示数設定</div>
+				<div class="searchBlock">
+					<div class="snumChange" value="10">10件</div>
+					<div class="snumChange" value="30">30件</div>
+					<div class="snumChange" value="1000">全件</div>
+				</div>
+			</div>
+			<div class="showBlock">
+				カスタム
+				<input type="number" id="snum" onkeypress="snumSbm(event.keyCode);">
+				<div id="snumButton" class="button">変更</div>
+			</div>
+		</div>
+		<div id="top" class="nbSpace">
+			<a  href="#top" class="backButton button link"></a>
+			<div class="alignRight">
+				<a href="#top" class="nextButton button"></a>
+			</div>
+		</div>
+		<div id="pageGuide"></div>
+		<ul id="info"></ul>
+
+		<div class="nbSpace">
+			<a href="#top" class="backButton button link"></a>
+			<div class="alignRight">
+				<a href="#top" class="nextButton button"></a>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/fukui-event.js"></script>
+	</html>
