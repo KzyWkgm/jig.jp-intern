@@ -34,7 +34,6 @@
 	background-color: #d1dcc6;
 	vertical-align: middle;
 	cursor: pointer;
-	text-decoration: none;
 	color:black;
 }
 
@@ -109,11 +108,11 @@
 }
 
 .eventInfo{
-	display: inline-block;
 	border-radius: 10px;
 	padding:10px 30px;
 	margin: 10px 0;
-	border:3px solid #000000;
+	border:12px solid #ff4444;
+	width: calc(100%-60px);
 }
 
 .blockTitle{
@@ -129,4 +128,57 @@
 #info .event_name{
 	font-size:24px;
 	margin:10px 0;
+}
+
+#info .event_obj{
+	border:3px solid #4444dd;
+	border-radius: 10px;
+
+}
+
+#info .evBlock{
+	padding:10px;
+	border: 3px solid #4444dd;
+}
+
+#info .category{
+	display: inline-block;
+	cursor: pointer;
+}
+
+#info .category_index{
+	display: inline-block;
+	margin:0 10px 0 0;
+}
+
+#info .category_text{
+	display:inline-block;
+}
+
+#info .evblbl{
+	margin:10px;
+}
+
+#info .start_date,#info .end_date{
+
+}
+
+#info .start_date_index,#info .end_date_index{
+	display:inline-block;
+	margin: 0 10px 0 0;
+}
+
+#info .start_date_text,#info .end_date_text{
+	display:inline-block;
+}
+
+#info .description_index,
+#info .schedule_description_index,
+#info .contact_index,
+#info .contact_phone_number_index,
+#info .event_place_index,
+#info .latitude_index,
+#info .longitude_index,
+#info .city_index{
+	margin:0 0 5px 0;
 }
