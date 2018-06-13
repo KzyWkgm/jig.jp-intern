@@ -80,6 +80,15 @@
 	cursor:pointer;
 }
 
+#holding{
+	display:inline-block;
+	border:1px solid #000000;
+	margin:10px;
+	padding:10px;
+	background-color: #aaaadd;
+	cursor:pointer;
+}
+
 .showBlock{
 	margin:10px 0;
 }

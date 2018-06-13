@@ -5,6 +5,12 @@ var snum=sNumMax;
 var data=[];
 var start=0;
 var categories=[];
+var todayData = new Date();
+var year = todayData.getFullYear();
+var month = todayData.getMonth()+1;
+var day = todayData.getDate();
+var today=year+"/"+month+"/"+day;
+var holdings=[];
 
 //データ読み込み
 $(function() {
@@ -105,4 +111,13 @@ function sclTop(){
 	$("html, body").animate({scrollTop:position}, speed, "swing");
 
 }
+
+$("#holding").on("click",function(){
+	data=holdings;
+	showDatas(data);
+	sclTop();
+});
+
+
+
 

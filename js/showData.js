@@ -129,6 +129,7 @@ function showDatas(data){
 function getCategories(data){
 	for(var i=0;i<data.length;i++){
 		categories.push(data[i].category);
+		holdingCheck(data,i);
 	}
 	categories=arrayUnique(categories);
 	var target="その他";
@@ -147,9 +148,20 @@ function getCategories(data){
 	}
 }
 
+//開催中のものを追加
+function holdingCheck(data,i){
+	var s=data[i].start_date;
+	var e=data[i].end_date;
+	if(s <= today && e >= today){
+		holdings.push(data[i]);
+	}
+}
+
 //重複削除
 function arrayUnique (array) {
 	return array.filter(function(value, index) {
 		return index === array.indexOf(value) ;
 	} ) ;
 }
+
+
